@@ -1,0 +1,39 @@
+<div class="wrapper h-100">
+    <h1 class="text-center bg-dark text-white p-4">Users Form</h1>
+    <form class="rounded h-100" [formGroup]="usersForm" (ngSubmit)="onSubmit()">
+        <div class="d-flex flex-column align-items-center bg-light p-5 h-100">
+            <div>
+                <label for="firstName">FirstName</label>
+                <input type="text" class="form-control" formControlName="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">LastName</label>
+                <input type="text" class="form-control" formControlName="lastName">
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="text" class="form-control" formControlName="age">
+            </div>
+
+            <div>
+                <label for="address">Address</label>
+                <input type="text" class="form-control" formControlName="address">
+            </div>
+
+            <div>
+                <label for="city">City</label>
+                <input type="text" class="form-control" formControlName="city">
+            </div>
+
+            <div class="pt-3">
+                <button type="submit" class="btn btn-primary me-2">Save</button>
+                <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+            <input type="text" [(ngModel)]="title" [ngModelOptions]="{standalone: true}"><h4 >{{ title }}</h4>
+        </div>
+    </form>
+</div>
+
+
