@@ -1,0 +1,35 @@
+<h1 class="text-center bg-dark text-white p-4">Personal Details</h1>
+<form class="row" [formGroup]="personalDetailsForm">
+    <div class="mb-3 col-6">
+        <label for="name" class="form-label"> Name </label>
+        <input type="text" name="name" id="name" class="form-control" formControlName="name">
+    </div>
+    <div class="mb-3 col-6">
+        <label for="gender" class="form-label"> Gender </label>
+        <div class="d-flex align-items-center">
+            <input type="radio" name="gender" id="male" value="Male" class="form-check-input" formControlName="gender">
+            <label for="male" class="form-label cursor-pointer mb-0 mx-4"> Male </label>
+            <input type="radio" name="gender" id="female" value="Female" class="form-check-input" formControlName="gender">
+            <label for="female" class="form-label cursor-pointer mb-0 mx-4"> Female </label>
+        </div>
+    </div>
+    <div class="mb-3 col-6">
+        <label for="dob" class="form-label"> DOB </label>
+        <input type="date" name="dob" id="dob" class="form-control" formControlName="dob">
+    </div>
+    <div class="mb-3 col-6">
+        <label for="age" class="form-label"> Age </label>
+        <input type="number" name="age" id="age" class="form-control" formControlName="age">
+    </div>
+    <div class="mb-3 col-6">
+        <label for="city" class="form-label"> City </label>
+        <input type="text" name="city" id="city" class="form-control" formControlName="city">
+    </div>
+    <div class="mb-3 col-6">
+        <label for="state" class="form-label"> State </label>
+        <input type="text" name="state" id="state" class="form-control" formControlName="state">
+    </div>
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-warning" type="button" (click)="onNext()"> Next </button>
+    </div>
+</form>
