@@ -1,0 +1,13 @@
+<div class="wrapper h-100 p-5">
+    <header class="d-flex justify-content-between my-3 px-4">
+        <div class="d-flex align-items-center flex-column cursor-pointer" *ngFor="let data of stepper"
+            routerLink="{{data.router}}" routerLinkActive="active">
+            <div class="dot rounded-circle d-flex justify-content-center align-items-center text-white"> {{data.num}}
+            </div>
+            <span> {{data.text}} </span>
+        </div>
+    </header>
+    <div class="bg-white border border-2 p-3">
+        <router-outlet></router-outlet>
+    </div>
+</div>

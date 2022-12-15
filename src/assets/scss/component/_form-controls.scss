@@ -1,0 +1,14 @@
+.dot{
+    background-color: $secondary;
+    height: 30px;
+    width: 30px;
+}
+
+.active{
+    .dot{
+        background-color:$primary;
+    }
+    span{
+        font-weight: 700;
+    }
+}
