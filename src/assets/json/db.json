@@ -31,53 +31,17 @@
   ],
   "taskData": [
     {
-      "name": "sdsdfsdfdsf",
-      "city": "dsfsdfsdf",
+      "name": "tanmay",
+      "city": "dwarka",
       "tasks": [
         {
-          "tasks": "fsdfdsfsdf"
+          "tasks": "rent a car"
         },
         {
-          "tasks": ""
+          "tasks": "go to temple"
         }
       ],
       "id": 1
-    },
-    {
-      "name": "sfsdf",
-      "city": "dfsdf",
-      "tasks": [
-        {
-          "tasks": "sdfsdf"
-        },
-        {
-          "tasks": ""
-        }
-      ],
-      "id": 2
-    },
-    {
-      "name": "sdsd",
-      "city": "sdfdsf",
-      "tasks": [
-        {
-          "tasks": "dfsdfsdf"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "name": "",
-      "city": "",
-      "tasks": [
-        {
-          "tasks": "ddf"
-        },
-        {
-          "tasks": ""
-        }
-      ],
-      "id": 4
     }
   ]
 }

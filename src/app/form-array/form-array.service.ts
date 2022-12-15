@@ -12,8 +12,8 @@ export class FormArrayService {
     this.apiLink = environment.baseUrl;
   }
 
-  public getData(): Observable<TaskData> {
-    return this._http.get<TaskData>(`${this.apiLink}/taskData`);
+  public getData(): Observable<TaskData[]> {
+    return this._http.get<TaskData[]>(`${this.apiLink}/taskData`);
   }
 
   public addData(data: TaskData): Observable<TaskData> {

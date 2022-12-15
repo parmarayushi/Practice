@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskData } from '../form-array.model';
+import { TaskData, Tasks } from '../form-array.model';
 import { FormArrayService } from '../form-array.service';
 
 @Component({
@@ -8,12 +8,14 @@ import { FormArrayService } from '../form-array.service';
 })
 export class ListComponent implements OnInit {
 
-  task!: TaskData;
+  task!: TaskData[];
+  tasks!:Tasks[];
   constructor(private service: FormArrayService) { }
 
   ngOnInit(): void {
     this.service.getData().subscribe((data) => {
       this.task = data;
+      console.log(this.task);
     })
   }
 

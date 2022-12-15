@@ -1,14 +1,18 @@
-<section *ngIf="task">
-    <div>
-        <label for="">Name: </label>
-        <span>{{task.name}}</span>
-    </div>
-    <div>
-        <label for="">City: </label>
-        <span>{{task.city}}</span>
-    </div>
-    <div>
-        <label for="">Task: </label>
-        <span>{{task.tasks.join(', ')}}</span>
-    </div>
+<section class="m-3" *ngFor="let items of task">
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <label class="fw-bold pe-2">Name: </label>
+                <span>{{items?.name}}</span>
+            </div>
+            <div>
+                <label class="fw-bold pe-2">City: </label>
+                <span>{{items?.city}}</span>
+            </div>
+            <div>
+                <label class="fw-bold pe-2">Task: </label>
+                <span class="d-flex" *ngFor="let data of items.tasks, let i=index">{{i+1}}. {{data?.tasks}}</span>
+            </div>
+        </div>
+      </div>
 </section>
