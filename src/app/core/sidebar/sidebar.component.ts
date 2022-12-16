@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OAuthService } from 'angular-oauth2-oidc';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -8,9 +7,9 @@ import { AuthService } from '../services/auth.service';
 })
 export class SidebarComponent implements OnInit {
 
-  public user!: any;
-  constructor(private oAuthService: OAuthService, private authService: AuthService) {
-    authService.userProfile.subscribe((res) => this.user = res)
+  public user: any;
+  constructor(private authService: AuthService) {
+    this.authService.userProfile.subscribe((res) => this.user = res)
   }
 
   ngOnInit(): void {
