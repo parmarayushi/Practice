@@ -1,0 +1,26 @@
+<div class="row flex-column">
+  <h2>Bar Chart</h2>
+  <div class="col-2 pb-2">
+    <select
+      class="form-select text-secondary border-0 cursor-pointer pe-3 pe-sm-4"
+      (change)="timeFrame()"
+      [(ngModel)]="filter"
+    >
+      <option value="month" class="text-secondary cursor-pointer">
+        Monthly
+      </option>
+      <option value="year" class="text-secondary cursor-pointer">Yearly</option>
+    </select>
+  </div>
+  <div class="col-6">
+    <canvas id="barChart"></canvas>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6 position-relative">
+    <h2>Doughnut Chart</h2>
+    <p>TOTAL DEVICES</p>
+    <canvas id="doughnutChart"></canvas>
+  </div>
+</div>
